@@ -1,0 +1,22 @@
+#include <stdio.h>
+void main()  
+{  
+    float cprice=27.50,sprice28.60;int plamt;	 //cprice is Cost Price and sprice is Selling Price, plamt denotes total profit/loss    
+      
+    if(sprice>cprice)					 //calculate profit  
+    {  
+        plamt = sprice-cprice; 
+        plamt=(plamt/cprise) * 100;
+        printf("\nYou can booked your profit percentage of : %d\n", plamt);  
+    }  
+    else if(cprice>sprice)				 //calculate loss  
+    {  
+        plamt = cprice-sprice;
+        plamt=(plamt/cprice)*100;  
+        printf("\nYou got a loss percentage of : %d\n", plamt);  
+    }  
+    else 							//No Profit No Loss  
+    {  
+        printf("\nYou are running in no profit no loss condition.\n");  
+    }  
+}
